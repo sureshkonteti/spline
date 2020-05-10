@@ -1306,13 +1306,13 @@ a:hover {
   background-color: #333333;
 }
 .page-container .bg-img-1 {
-  background: url("../images/backgrounds/bg-1.jpg") center center fixed;
+  background: url("../images/bg-1.jpg") center center fixed;
 }
 .page-container .bg-img-2 {
-  background: url("../images/backgrounds/bg-2.jpg") top center fixed;
+  background: url("../images/bg-2.jpg") top center fixed;
 }
 .page-container .bg-texture-1 {
-  background-image: url("../images/textures/texture-1.png");
+  background-image: url("../images/texture-1.png");
   background-position: left top;
   background-repeat: repeat;
 }
