@@ -1,0 +1,151 @@
+<!-- page content -->
+<div class="page-content">                
+<!-- page content wrapper -->
+<div class="page-content-wrap bg-light">
+    <!-- page content holder -->
+    <div class="page-content-holder no-padding">
+        <!-- page title -->
+        <div class="page-title">                            
+            <h1>Contacts us</h1>
+            <!-- breadcrumbs -->
+            <ul class="breadcrumb">
+                <li><a href="#/home">Home</a></li>
+                <li class="active">Contacts</li>
+            </ul>               
+            <!-- ./breadcrumbs -->
+        </div>
+        <!-- ./page title -->
+    </div>
+    <!-- ./page content holder -->
+</div>
+<!-- ./page content wrapper -->               
+<!-- page content wrapper -->
+<!-- <div class="page-content-wrap">                     
+    <div id="map" style="width: 100%; height: 300px;"></div>    
+</div> -->
+<!-- ./page content wrapper -->
+
+<!-- page content wrapper -->
+<div class="page-content-wrap">                      
+    <div class="divider"><div class="box"><span class="fa fa-angle-down"></span></div></div>                        
+    <!-- page content holder -->
+    <div class="page-content-holder">    
+        <div class="row">
+            <div class="col-md-7" data-animate="fadeInLeft">                
+                <div class="text-column">
+                    <h4>Contact Us</h4>
+                    <div class="text-column-info">
+                        All fields with an asterisk (*) are required. 
+                    </div>
+                </div>                
+                <div class="row">
+
+<!--                 <form id="contactForm" name="form" action="" method="post" role="form" class="form-horizontal" >             
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name <span class="text-hightlight">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" size="30" placeholder="enter name" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="text-hightlight">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="enter email" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number<span class="text-hightlight">*</span></label>
+                            <input type="number" class="form-control" id="phone" name="phone" placeholder="enter mobile number" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="text-hightlight">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="8" required></textarea>
+                        </div>
+                    </div>                
+                    <button class="btn btn-primary btn-lg pull-right" type="submit">Send Message</button>
+                </form> -->
+
+                <form id="contactForm" name="contactForm" action="contactForm.php" method="post" role="form" class="form-horizontal">
+                   <!-- <p ng-show="success">Thanks for your interest, we will get in touch!</p>
+                    <p ng-show="error"> Something wrong happened!, please try again..</p>     -->
+                    <filedset>          
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name" id="name"> Name <span class="text-hightlight">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" ng-model="input.name" placeholder="enter name" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email" id="email"> E-mail <span class="text-hightlight">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" ng-model="input.email" placeholder="enter email" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="phone" id="phone"> Mobile Number <span class="text-hightlight">*</span></label>
+                            <input type="number" class="form-control" id="phone" name="phone" ng-model="input.phone" placeholder="enter mobile number" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" id="message"> Message <span class="text-hightlight">*</span></label>
+                            <textarea class="form-control" id="message" name="message" ng-model="input.message" rows="8" required></textarea>
+                        </div>
+                    </div>                
+                    <button class="btn btn-primary btn-lg pull-right validate" type="submit" name="submit"> Send Message </button>
+                    </filedset>
+                </form>
+                </div>                
+            </div>
+            <div class="col-md-5" data-animate="fadeInRight">
+                
+                <div class="text-column text-column-centralized">
+                    <div class="text-column-icon">
+                        <span class="fa fa-home"></span>
+                    </div>                                    
+                    <h4>Our Office</h4>
+                    <div class="text-column-info">
+                        <p><strong><span class="fa fa-map-marker"></span> Address: </strong> Plot-623, 2nd Floor, Vivekananda Nagar, Kukatpally, Hyderabad-500072, Telangana</p>
+                        <p><strong><span class="fa fa-phone"></span> Phone: </strong> (040) 65180006</p>
+                        <p><strong><span class="fa fa-envelope"></span> E-mail: </strong> <a href="mailto:hr@splineengg.com">hr@splineengg.com</a></p>
+                    </div>
+                </div>
+                        
+                <div class="text-column text-column-centralized">
+                    <div class="text-column-icon">
+                        <span class="fa fa-clock-o"></span>
+                    </div>
+                    <h4>Bussines Hours</h4>
+                    <div class="text-column-info">
+                        <p><strong>Monday &mdash; Saturday</strong>: 9:00am - 7:00pm</p>
+                    </div>
+                </div>                
+            </div>
+        </div>        
+    </div>
+    <!-- ./page content holder -->
+</div>
+<!-- ./page content wrapper -->
+</div>
+<!-- ./page content -->
+<!--
+<script type="text/javascript">
+function initMap() {
+  var myLatLng = {lat: 17.4932615, lng: 78.4102007};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+</script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=angular.noop">
+    </script>
+-->
